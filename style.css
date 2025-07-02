@@ -1,0 +1,74 @@
+body {
+    background: #000;
+    margin: 0;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+}
+
+.main-logo {
+    width: 120px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin: 0 0 35px 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    background: #222;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 18px auto;
+    max-width: 95%;
+    min-width: 270px;
+    font-size: 1.18rem;
+    font-weight: 500;
+    transition: background 0.15s;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.store-btn:hover {
+    background: #333;
+}
+
+.store-btn .icon {
+    width: 38px;
+    height: 38px;
+    margin-right: 18px;
+}
+
+.store-btn span {
+    color: #fff;
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 98vw;
+    }
+    .main-logo {
+        width: 90px;
+    }
+    .store-btn {
+        padding: 15px 10px;
+        font-size: 1rem;
+    }
+}

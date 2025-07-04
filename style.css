@@ -4,21 +4,22 @@ body {
     min-height: 100vh;
     color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    display: flex;
+    /* Quitamos el centrado vertical */
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .container {
     width: 100%;
     max-width: 650px;
-    margin: auto;
+    margin: 40px auto 0 auto; /* Ajustá este valor: cuanto menos, más arriba */
     text-align: center;
 }
 
 .main-logo {
     width: 120px;
-    margin-top: 30px;
+    margin-top: 16px;
     margin-bottom: 16px;
 }
 
@@ -63,6 +64,7 @@ h1 {
 @media (max-width: 500px) {
     .container {
         max-width: 98vw;
+        margin-top: 18px;
     }
     .main-logo {
         width: 90px;

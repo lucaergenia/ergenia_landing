@@ -4,16 +4,12 @@ body {
     min-height: 100vh;
     color: #fff;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    /* Quitamos el centrado vertical */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .container {
     width: 100%;
     max-width: 650px;
-    margin: 40px auto 0 auto; /* Ajustá este valor: cuanto menos, más arriba */
+    margin: 32px auto 0 auto;    /* Más arriba */
     text-align: center;
 }
 
@@ -33,10 +29,11 @@ h1 {
 .store-btn {
     display: flex;
     align-items: center;
+    justify-content: center;      /* Centra todo horizontalmente */
     background: #222;
     border-radius: 12px;
     padding: 18px 20px;
-    margin: 28px auto;
+    margin: 22px auto;            /* Ajusta la distancia entre botones aquí */
     max-width: 95%;
     min-width: 270px;
     font-size: 1.18rem;
@@ -53,12 +50,27 @@ h1 {
 .store-btn .icon {
     width: 38px;
     height: 38px;
-    margin-right: 18px;
+    margin-right: 18px;           /* Espacio entre icono y texto */
+    display: block;
 }
 
 .store-btn span {
     color: #fff;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    align-items: center;          /* Asegura centrado vertical */
+}
+
+.footer {
+    width: 100%;
+    padding: 18px 0 14px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #ccc;
+    background: transparent;
+    letter-spacing: 1px;
+    margin-top: 48px;
+    user-select: none;
 }
 
 @media (max-width: 500px) {
